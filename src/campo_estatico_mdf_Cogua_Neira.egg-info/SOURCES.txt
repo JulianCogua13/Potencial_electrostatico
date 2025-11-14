@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/campo_estatico_mdf/__init__.py
+src/campo_estatico_mdf/bc.py
+src/campo_estatico_mdf/field.py
+src/campo_estatico_mdf/grid.py
+src/campo_estatico_mdf/jacobi.py
+src/campo_estatico_mdf/solver.py
+src/campo_estatico_mdf/visual.py
+src/campo_estatico_mdf_Cogua_Neira.egg-info/PKG-INFO
+src/campo_estatico_mdf_Cogua_Neira.egg-info/SOURCES.txt
+src/campo_estatico_mdf_Cogua_Neira.egg-info/dependency_links.txt
+src/campo_estatico_mdf_Cogua_Neira.egg-info/requires.txt
+src/campo_estatico_mdf_Cogua_Neira.egg-info/top_level.txt
+tests/test_solver.py

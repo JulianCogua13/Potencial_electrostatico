@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: campo-estatico-mdf
+Version: 0.2.0
+Summary: Laplace 2D por MDF (Jacobi), cálculo de E y frontend Streamlit
+Author-email: Julian Cogua <ojcoguaa@udistrital.edu.co>, Juan Esteban Neira <jueneirad@udistrital.edu.co>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: streamlit>=1.30
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+
+# Potencial Electroestático 2D (`campo_estatico_mdf`)
+
+`campo_estatico_mdf` es un paquete Python para calcular la distribución del **potencial eléctrico** en una región 2D usando la **ecuación de Laplace** y el **método de diferencias finitas (MDF)**. Incluye:
+
+- Resolución iterativa con **Jacobi**
+- Cálculo del **campo eléctrico** \(E = -∇V\)
+- Visualización con **matplotlib** o **Streamlit** (interfaz interactiva)
+
+---
