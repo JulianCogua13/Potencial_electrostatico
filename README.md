@@ -14,16 +14,12 @@ Este proyecto incluye:
 ## Características Principales
 
 - Resolución numérica robusta de la **Ecuación de Laplace en 2D**
-  
-  \[
-  \nabla^2 V = 0
-  \]
+
+  $$\nabla^2 V = 0$$
 
 - Implementación del **Método de Diferencias Finitas**:
 
-  \[
-  V_{i,j} = \frac{1}{4} \left( V_{i+1,j} + V_{i-1,j} + V_{i,j+1} + V_{i,j-1} \right)
-  \]
+  $$V_{i,j} = \frac{1}{4} \left( V_{i+1,j} + V_{i-1,j} + V_{i,j+1} + V_{i,j-1} \right)$$
 
 - Métodos iterativos disponibles:
   - Jacobi  
@@ -31,9 +27,8 @@ Este proyecto incluye:
 
 - Cálculo del campo eléctrico:
 
-  \[
-  \vec{E} = -\nabla V
-  \]
+  $$\vec{E} = -\nabla V$$
+
 
 - Visualización:
   - Mapa de calor del potencial (heatmap)
