@@ -6,6 +6,7 @@ src/campo_estatico_mdf/field.py
 src/campo_estatico_mdf/grid.py
 src/campo_estatico_mdf/jacobi.py
 src/campo_estatico_mdf/solver.py
+src/campo_estatico_mdf/visual.py
 src/campo_estatico_mdf.egg-info/PKG-INFO
 src/campo_estatico_mdf.egg-info/SOURCES.txt
 src/campo_estatico_mdf.egg-info/dependency_links.txt

@@ -1,5 +1,5 @@
 Metadata-Version: 2.4
-Name: campo-estatico-mdf
+Name: campo-estatico-mdf-Cogua-Neira
 Version: 0.2.0
 Summary: Laplace 2D por MDF (Jacobi), cálculo de E y frontend Streamlit
 Author-email: Julian Cogua <ojcoguaa@udistrital.edu.co>, Juan Esteban Neira <jueneirad@udistrital.edu.co>
