@@ -1,6 +1,0 @@
-numpy>=1.22
-matplotlib>=3.7
-streamlit>=1.30
-
-[dev]
-pytest>=7.0
