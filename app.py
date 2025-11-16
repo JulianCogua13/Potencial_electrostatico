@@ -1,6 +1,10 @@
+import sys
+sys.path.append("src")  # Para que Streamlit encuentre el paquete local
+
 import streamlit as st
 from campo_estatico_mdf.solver import LaplaceSolver2D
 from campo_estatico_mdf.visual import plot_potential, plot_field
+import io
 
 st.set_page_config(page_title="Simulación Electroestática 2D", layout="wide")
 st.title("Simulación Electroestática en Región Cuadrada")
@@ -36,9 +40,21 @@ if run_sim:
         fig1 = plot_potential(solver.V, figsize=(fig_width, fig_height))
         st.pyplot(fig1)
 
+        # Botón para descargar figura de potencial
+        buf1 = io.BytesIO()
+        fig1.savefig(buf1, format="png")
+        buf1.seek(0)
+        st.download_button("Descargar mapa de potencial", buf1, file_name="potencial.png", mime="image/png")
+
         st.subheader("Campo eléctrico E(x, y)")
         fig2 = plot_field(solver.V, solver.h, stride=stride, figsize=(fig_width, fig_height))
         st.pyplot(fig2)
+
+        # Botón para descargar figura del campo eléctrico
+        buf2 = io.BytesIO()
+        fig2.savefig(buf2, format="png")
+        buf2.seek(0)
+        st.download_button("Descargar campo eléctrico", buf2, file_name="campo.png", mime="image/png")
 
     with col_metrics:
         st.subheader("Métrica de convergencia")
