@@ -29,7 +29,7 @@ if run_sim:
         info = solver.solve_jacobi(tol=tol, max_iter=10000)
 
     # --- Sección principal dividida en 2 columnas ---
-    col_graf, col_metrics = st.columns([3, 1])  # 3:1 proporción
+    col_graf, col_metrics = st.columns([3, 1])  # proporción 3:1
 
     with col_graf:
         st.subheader("Mapa de potencial eléctrico V(x, y)")
@@ -45,3 +45,16 @@ if run_sim:
         st.write(f"Número de iteraciones: {info.iterations}")
         st.write(f"Diferencia máxima final: {info.max_diff:.3e}")
         st.write(f"Tolerancia usada: {info.tol:.3e}")
+
+# --- Sección final: Link a la documentación ---
+st.markdown("---")
+st.subheader("📄 Documentación del Proyecto")
+st.markdown(
+    """
+    Puedes consultar la documentación completa del proyecto aquí:<br><br>
+    👉 <a href="https://juliancogua13.github.io/Potencial_electrostatico/index.html" target="_blank">
+    <b>Documentación en GitHub Pages</b>
+    </a>
+    """,
+    unsafe_allow_html=True
+)

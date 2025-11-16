@@ -1,10 +1,3 @@
-from campo_estatico_mdf.solver import LaplaceSolver2D
-
-solver = LaplaceSolver2D(N=20, left=0, right=10, top=5, bottom=0)
-info = solver.solve_jacobi(tol=1e-5)
-
-print(info)
-
 from campo_estatico_mdf.visual import plot_potential, plot_field
 import matplotlib.pyplot as plt
 
@@ -13,4 +6,3 @@ plt.show()
 
 fig2 = plot_field(solver.V, solver.h, stride=2, figsize=(5,5))
 plt.show()
-
