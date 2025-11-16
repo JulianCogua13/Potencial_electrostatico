@@ -1,0 +1,4 @@
+campo-estatico-mdf-Cogua-Neira
+numpy>=1.22
+matplotlib>=3.7
+streamlit>=1.30
