@@ -12,6 +12,7 @@ Esta documentación incluye:
    :caption: Contenido:
 
    theory
+   inst
    grid
    bc
    field
